@@ -9,3 +9,9 @@ groups:
         requirement_level: recommended
       - ref: gcp.gce.instance.hostname
         requirement_level: recommended
+      - ref: gcp.gce.instance_group_manager.name
+        requirement_level: recommended
+      - ref: gcp.gce.instance_group_manager.zone
+        requirement_level: recommended
+      - ref: gcp.gce.instance_group_manager.region
+        requirement_level: recommended
