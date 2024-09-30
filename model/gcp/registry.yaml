@@ -62,7 +62,13 @@ groups:
         brief: >
           The hostname of a GCE instance. This is the full value of the default or [custom hostname](https://cloud.google.com/compute/docs/instances/custom-hostname-vm).
         examples: ['my-host1234.example.com', 'sample-vm.us-west1-b.c.my-project.internal']
-      - id: gcp.gce.instance_group_manager.name
+  - id: registry.gcp.gce.instance_group.manager
+    type: attribute_group
+    display_name: GCP - Google Compute Engine (GCE) Instance Group Manager Attributes
+    brief: >
+      This document defines attributes for Google Compute Engine (GCE) Instance Group Managers
+    attributes:
+      - id: gcp.gce.instance_group.manager.name
         type: string
         stability: experimental
         brief: >-
@@ -72,7 +78,7 @@ groups:
           field of an `instanceGroupManagers` or
           `regionInstanceGroupManagers` resource.
         examples: ['my-instance-group']
-      - id: gcp.gce.instance_group_manager.zone
+      - id: gcp.gce.instance_group.manager.zone
         type: string
         stability: experimental
         brief: >-
@@ -81,7 +87,7 @@ groups:
           [zone](https://cloud.google.com/compute/docs/reference/rest/v1/instanceGroupManagers/get)
           field of an `instanceGroupManagers` resource.
         examples: ['us-central1-a', 'europe-west9-a']
-      - id: gcp.gce.instance_group_manager.region
+      - id: gcp.gce.instance_group.manager.region
         type: string
         stability: experimental
         brief: >-

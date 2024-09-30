@@ -9,6 +9,7 @@
 - [GCP Client Attributes](#gcp-client-attributes)
 - [GCP - Google Cloud Run Attributes](#gcp---google-cloud-run-attributes)
 - [GCP - Google Compute Engine (GCE) Attributes](#gcp---google-compute-engine-gce-attributes)
+- [GCP - Google Compute Engine (GCE) Instance Group Manager Attributes](#gcp---google-compute-engine-gce-instance-group-manager-attributes)
 
 ## GCP Client Attributes
 
@@ -37,6 +38,13 @@ This document defines attributes for Google Compute Engine (GCE).
 |---|---|---|---|---|
 | <a id="gcp-gce-instance-hostname" href="#gcp-gce-instance-hostname">`gcp.gce.instance.hostname`</a> | string | The hostname of a GCE instance. This is the full value of the default or [custom hostname](https://cloud.google.com/compute/docs/instances/custom-hostname-vm). | `my-host1234.example.com`; `sample-vm.us-west1-b.c.my-project.internal` | ![Experimental](https://img.shields.io/badge/-experimental-blue) |
 | <a id="gcp-gce-instance-name" href="#gcp-gce-instance-name">`gcp.gce.instance.name`</a> | string | The instance name of a GCE instance. This is the value provided by `host.name`, the visible name of the instance in the Cloud Console UI, and the prefix for the default hostname of the instance as defined by the [default internal DNS name](https://cloud.google.com/compute/docs/internal-dns#instance-fully-qualified-domain-names). | `instance-1`; `my-vm-name` | ![Experimental](https://img.shields.io/badge/-experimental-blue) |
-| <a id="gcp-gce-instance-group-manager-name" href="#gcp-gce-instance-group-manager-name">`gcp.gce.instance_group_manager.name`</a> | string | The name of a GCE instance group manager. This is the value of the [name](https://cloud.google.com/compute/docs/reference/rest/v1/instanceGroupManagers/get) field of an `instanceGroupManagers` or `regionInstanceGroupManagers` resource. | `my-instance-group` | ![Experimental](https://img.shields.io/badge/-experimental-blue) |
-| <a id="gcp-gce-instance-group-manager-region" href="#gcp-gce-instance-group-manager-region">`gcp.gce.instance_group_manager.region`</a> | string | The region of a GCE instance group manager. This is the value of the [region](https://cloud.google.com/compute/docs/reference/rest/v1/regionInstanceGroupManagers/get) field of an `regionInstanceGroupManagers` resource. | `us-central1`; `europe-west9` | ![Experimental](https://img.shields.io/badge/-experimental-blue) |
-| <a id="gcp-gce-instance-group-manager-zone" href="#gcp-gce-instance-group-manager-zone">`gcp.gce.instance_group_manager.zone`</a> | string | The zone of a GCE instance group manager. This is the value of the [zone](https://cloud.google.com/compute/docs/reference/rest/v1/instanceGroupManagers/get) field of an `instanceGroupManagers` resource. | `us-central1-a`; `europe-west9-a` | ![Experimental](https://img.shields.io/badge/-experimental-blue) |
+
+## GCP - Google Compute Engine (GCE) Instance Group Manager Attributes
+
+This document defines attributes for Google Compute Engine (GCE) Instance Group Managers
+
+| Attribute | Type | Description | Examples | Stability |
+|---|---|---|---|---|
+| <a id="gcp-gce-instance-group-manager-name" href="#gcp-gce-instance-group-manager-name">`gcp.gce.instance_group.manager.name`</a> | string | The name of a GCE instance group manager. This is the value of the [name](https://cloud.google.com/compute/docs/reference/rest/v1/instanceGroupManagers/get) field of an `instanceGroupManagers` or `regionInstanceGroupManagers` resource. | `my-instance-group` | ![Experimental](https://img.shields.io/badge/-experimental-blue) |
+| <a id="gcp-gce-instance-group-manager-region" href="#gcp-gce-instance-group-manager-region">`gcp.gce.instance_group.manager.region`</a> | string | The region of a GCE instance group manager. This is the value of the [region](https://cloud.google.com/compute/docs/reference/rest/v1/regionInstanceGroupManagers/get) field of an `regionInstanceGroupManagers` resource. | `us-central1`; `europe-west9` | ![Experimental](https://img.shields.io/badge/-experimental-blue) |
+| <a id="gcp-gce-instance-group-manager-zone" href="#gcp-gce-instance-group-manager-zone">`gcp.gce.instance_group.manager.zone`</a> | string | The zone of a GCE instance group manager. This is the value of the [zone](https://cloud.google.com/compute/docs/reference/rest/v1/instanceGroupManagers/get) field of an `instanceGroupManagers` resource. | `us-central1-a`; `europe-west9-a` | ![Experimental](https://img.shields.io/badge/-experimental-blue) |

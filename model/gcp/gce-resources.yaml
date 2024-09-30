@@ -9,9 +9,15 @@ groups:
         requirement_level: recommended
       - ref: gcp.gce.instance.hostname
         requirement_level: recommended
-      - ref: gcp.gce.instance_group_manager.name
+  - id: gcp.gce.instance_group.manager
+    type: resource
+    name: gcp.gce.instance_group.manager
+    brief: >
+      [instanceGroupManager](https://cloud.google.com/compute/docs/reference/rest/v1/instanceGroupManagers/get) resource in Google Compute Engine (GCE).
+    attributes:
+      - ref: gcp.gce.instance_group.manager.name
         requirement_level: recommended
-      - ref: gcp.gce.instance_group_manager.zone
+      - ref: gcp.gce.instance_group.manager.zone
         requirement_level: recommended
-      - ref: gcp.gce.instance_group_manager.region
+      - ref: gcp.gce.instance_group.manager.region
         requirement_level: recommended
